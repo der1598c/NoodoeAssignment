@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="9Hh-lC-CEm">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="5Er-22-ALz" customClass="MainViewController" customModule="NoodoeAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTa-xN-Ub0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-gH-2PI">
+                                <rect key="frame" x="102.5" y="144" width="209.5" height="102.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="75"/>
+                                <color key="textColor" name="Primary"/>
+                                <color key="highlightedColor" name="Secondary"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-k5-QLm">
+                                <rect key="frame" x="66" y="757" width="282" height="65"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="zdd-rd-bQ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="40"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearLoginTapped:" destination="5Er-22-ALz" eventType="touchUpInside" id="qic-E8-yTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-8t-3G5">
+                                <rect key="frame" x="66" y="682" width="282" height="67"/>
+                                <color key="backgroundColor" name="Secondary"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="40"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateTapped:" destination="5Er-22-ALz" eventType="touchUpInside" id="bIm-6o-8EX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCT-Cc-OzB">
+                                <rect key="frame" x="124" y="254.5" width="166" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modify timezone here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syf-ji-9JY">
+                                <rect key="frame" x="101.5" y="369.5" width="211" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Gs-er-6hj">
+                                <rect key="frame" x="194" y="404.5" width="26" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UpdateAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-n1-rtU">
+                                <rect key="frame" x="161.5" y="627" width="91" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WmT-n1-rtU" firstAttribute="centerX" secondItem="GTa-xN-Ub0" secondAttribute="centerX" id="17K-FY-rfa"/>
+                            <constraint firstItem="Syf-ji-9JY" firstAttribute="centerX" secondItem="GTa-xN-Ub0" secondAttribute="centerX" id="6X7-Eh-Pxx"/>
+                            <constraint firstItem="1Y3-oc-6Nk" firstAttribute="trailing" secondItem="zaL-8t-3G5" secondAttribute="trailing" constant="66" id="86X-vR-eOr"/>
+                            <constraint firstItem="7Gs-er-6hj" firstAttribute="centerX" secondItem="GTa-xN-Ub0" secondAttribute="centerX" id="MWg-il-2iH"/>
+                            <constraint firstItem="Syf-ji-9JY" firstAttribute="top" secondItem="iCT-Cc-OzB" secondAttribute="bottom" constant="86" id="XCh-2P-RVL"/>
+                            <constraint firstItem="zaL-8t-3G5" firstAttribute="top" secondItem="WmT-n1-rtU" secondAttribute="bottom" constant="28" id="aG7-4m-S4r"/>
+                            <constraint firstItem="rhy-k5-QLm" firstAttribute="top" secondItem="zaL-8t-3G5" secondAttribute="bottom" constant="8" id="bt3-L0-vaJ"/>
+                            <constraint firstItem="rhy-k5-QLm" firstAttribute="leading" secondItem="1Y3-oc-6Nk" secondAttribute="leading" constant="66" id="eMN-F7-fvs"/>
+                            <constraint firstItem="1Y3-oc-6Nk" firstAttribute="bottom" secondItem="rhy-k5-QLm" secondAttribute="bottom" constant="40" id="nyJ-s5-236"/>
+                            <constraint firstItem="ABR-gH-2PI" firstAttribute="top" secondItem="1Y3-oc-6Nk" secondAttribute="top" constant="100" id="oZm-P1-UOF"/>
+                            <constraint firstItem="iCT-Cc-OzB" firstAttribute="top" secondItem="ABR-gH-2PI" secondAttribute="bottom" constant="8" id="qbR-OE-bPn"/>
+                            <constraint firstItem="ABR-gH-2PI" firstAttribute="centerX" secondItem="GTa-xN-Ub0" secondAttribute="centerX" id="tUR-za-nLh"/>
+                            <constraint firstItem="7Gs-er-6hj" firstAttribute="top" secondItem="Syf-ji-9JY" secondAttribute="bottom" constant="8" id="uBu-v2-cI6"/>
+                            <constraint firstItem="zaL-8t-3G5" firstAttribute="leading" secondItem="1Y3-oc-6Nk" secondAttribute="leading" constant="66" id="xcL-gw-q2U"/>
+                            <constraint firstItem="iCT-Cc-OzB" firstAttribute="centerX" secondItem="GTa-xN-Ub0" secondAttribute="centerX" id="ySh-eV-YgV"/>
+                            <constraint firstItem="1Y3-oc-6Nk" firstAttribute="trailing" secondItem="rhy-k5-QLm" secondAttribute="trailing" constant="66" id="yf9-eB-AZA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Y3-oc-6Nk"/>
+                    </view>
+                    <connections>
+                        <outlet property="helloTitle_lab" destination="iCT-Cc-OzB" id="c05-z1-eAN"/>
+                        <outlet property="timezone_txtField" destination="7Gs-er-6hj" id="4aA-c9-lmd"/>
+                        <outlet property="updateAt_lab" destination="WmT-n1-rtU" id="KMW-Y2-dcF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03p-Ra-uNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Primary">
+            <color red="1" green="0.69999998807907104" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.40000000596046448" green="0.69999998807907104" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
