@@ -1,5 +1,9 @@
 # NoodoeAssignment
 
+### Demo
+
+![](https://github.com/der1598c/NoodoeAssignment/blob/master/demo.gif)
+
 ### Case 1: Login API
 
 #### 請依照文件的說明，執行使用者登入
